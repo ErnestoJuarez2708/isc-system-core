@@ -1,4 +1,4 @@
-import Permission from "../models/permission";
+import Permission from "../models/permissionInterface";
 import * as permissionRepository from "../repositories/permissionRepository";
 
 export const getUserRolesAndPermissions = async (id: string):Promise<Permission | null> => {

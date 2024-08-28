@@ -1,6 +1,6 @@
 import NewGraduationProcess from '../dtos/newGraduationProcess';
-import { DefenseDetail } from '../models/defenseDetail';
-import GraduationProcess from '../models/graduationProcess';
+import { DefenseDetail } from '../models/defenseDetailInterface';
+import GraduationProcess from '../models/graduationProcessInterface';
 import * as GraduationProcessRepository from '../repositories/graduationRepository';
 
 export const getGraduationProcessById = async (processId: number): Promise<GraduationProcess> => {

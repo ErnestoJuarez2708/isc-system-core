@@ -2,7 +2,7 @@ import * as UserService from '../services/userService';
 import * as AuthenticationService from '../services/authenticationService';
 import { generateToken } from '../utils/jwtUtility';
 import { buildLogger } from '../plugin/logger';
-import UserResponse from '../models/userResponse';
+import UserResponse from '../models/userResponseInterface';
 import { AuthenticationError } from '../errors/authenticationError';
 
 const logger = buildLogger('loginController');

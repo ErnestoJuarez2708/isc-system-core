@@ -1,5 +1,5 @@
-import { DefenseDetail } from '../models/defenseDetail';
-import GraduationProcess from '../models/graduationProcess';
+import { DefenseDetail } from '../models/defenseDetailInterface';
+import GraduationProcess from '../models/graduationProcessInterface';
 import db from './pg-connection';
 
 const tableName = 'graduation_process';

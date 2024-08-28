@@ -2,8 +2,8 @@ import createGraduationProcessRequest from '../dtos/createGraduationProcessReque
 import NewGraduationProcess from '../dtos/newGraduationProcess';
 import { BadRequestError } from '../errors/badRequestError';
 import { NotFoundError } from '../errors/notFoundError';
-import { DefenseDetail } from '../models/defenseDetail';
-import GraduationProcess from '../models/graduationProcess';
+import { DefenseDetail } from '../models/defenseDetailInterface';
+import GraduationProcess from '../models/graduationProcessInterface';
 import * as GraduationProcessService from '../services/graduationService';
 import { getStudentByCode } from './studentInteractor';
 

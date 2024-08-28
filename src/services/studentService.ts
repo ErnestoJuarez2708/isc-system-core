@@ -1,5 +1,5 @@
 import createUserRequest from '../dtos/createUserRequest';
-import Student from '../models/student';
+import Student from '../models/studentInterface';
 import * as UserRepository from '../repositories/userRepository';
 
 export const getStudents = async (): Promise<Student[]> => {
