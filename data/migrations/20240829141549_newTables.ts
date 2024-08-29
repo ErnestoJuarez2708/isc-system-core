@@ -41,8 +41,7 @@ export async function up(knex: Knex): Promise<void> {
     .createTable('events_interns', function (table) {
       table.integer('intern_id').unsigned().references('id').inTable('interns').onDelete('CASCADE');
       table.integer('event_id').unsigned().references('id').inTable('events').onDelete('CASCADE');
-      table.string('status').unique();
-      table.boolean('is_reserve');
+      table.enu('type', ['accepted', 'rejected', 'pending', 'reserve']).notNullable();
       table.timestamp('created_at').defaultTo(knex.fn.now(6));
       table.timestamp('updated_at').defaultTo(knex.fn.now(6));
       table.primary(['intern_id', 'event_id']);
