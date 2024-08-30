@@ -1,4 +1,4 @@
-import config from './config/config';
+import config from '../src/config/config';
 
 const { database } = config;
 
@@ -14,10 +14,10 @@ const knexConfig: { [key: string]: import('knex').Knex.Config } = {
       ssl: false,
     },
     migrations: {
-      directory: './data/migrations',
+      directory: '../data/migrations',
     },
     seeds: {
-      directory: './data/seeds',
+      directory: '../data/seeds',
     },
   },
   staging: {
