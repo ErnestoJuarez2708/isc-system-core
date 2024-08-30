@@ -10,6 +10,7 @@ import modalityRouter from './routes/modalityRoutes';
 import adminRouter from './routes/adminRoutes';
 import statsRouter from './routes/statsRoutes';
 import emailRouter from './routes/emailRoutes';
+import eventInternsRouter from './routes/eventInternsRoutes'
 import permissionRouter from './routes/permissionRouters'
 
 dotenv.config();
@@ -32,5 +33,6 @@ app.use('/api/modality', modalityRouter);
 app.use('/api/stats', statsRouter);
 app.use('/api/email', emailRouter);
 app.use('/api/permission', permissionRouter);
+app.use('/api/events', eventInternsRouter)
 
 export default app;
