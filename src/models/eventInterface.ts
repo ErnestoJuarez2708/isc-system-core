@@ -1,4 +1,4 @@
-import { Dayjs } from "dayjs";
+import { Dayjs } from 'dayjs';
 
 interface Event {
   id?: number;
@@ -19,4 +19,4 @@ interface Event {
   updated_at: Dayjs;
 }
 
-export default Event
+export default Event;
