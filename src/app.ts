@@ -13,6 +13,7 @@ import emailRouter from './routes/emailRoutes';
 import eventInternsRouter from './routes/eventInternsRoutes'
 import permissionRouter from './routes/permissionRouters';
 import eventsRouter from './routes/eventsRoutes';
+import internsRouter from './routes/internsRoutes'
 
 dotenv.config();
 
@@ -36,5 +37,5 @@ app.use('/api/email', emailRouter);
 app.use('/api/permission', permissionRouter);
 app.use('/api/events', eventInternsRouter)
 app.use('/api/events', eventsRouter);
-
+app.use('/api/interns',internsRouter)
 export default app;
