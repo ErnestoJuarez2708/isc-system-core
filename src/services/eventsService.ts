@@ -10,7 +10,7 @@ import Event from '../models/eventInterface';
 export const getEventsService = async () => {
   try {
     const events = await getEvents();
-    //logica de negocio
+    //TODO: LOGIC BUSINESS
     return events;
   } catch (error) {
     console.error('Error in eventsService.getEventsService:', error);
