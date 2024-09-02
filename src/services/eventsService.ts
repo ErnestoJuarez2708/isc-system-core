@@ -22,7 +22,7 @@ export const getEventsByIdService = async (id: string) => {
   try {
     const event = await getEvent(id);
     return event;
-    //logica de negocio
+  //TODO: LOGIC BUSINESS
   } catch (error) {
     console.error('Error in eventsService.getEventsByIdService:', error);
     throw new Error('Error fetching Event');
@@ -33,7 +33,7 @@ export const createEventService = async (event: Event) => {
   try {
     const eventResponse = await createEvent(event);
     return eventResponse;
-    //logica de negocio
+    //TODO: LOGIC BUSINESS
   } catch (error) {
     console.error('Error in eventsService.createEventService:', error);
     throw new Error('Error creating Event');
@@ -44,7 +44,7 @@ export const updateEventService = async (event: Event, id: string) => {
   try {
     const eventResponse = await updateEvent(event, id);
     return eventResponse;
-    //logica de negocio
+    //TODO: LOGIC BUSINESS
   } catch (error) {
     console.error('Error in eventsService.updateEventService:', error);
     throw new Error('Error updating Event');
@@ -55,7 +55,7 @@ export const deleteEventService = async (id: string) => {
   try {
     const eventDeleted = await deleteEvent(id);
     return eventDeleted;
-    //logica de negocio
+    //TODO: LOGIC BUSINESS
   } catch (error) {
     console.error('Error in eventsService.deleteEventService:', error);
     throw new Error('Error deleting Event');
